@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      {error && <div className="error-message">{error}</div>}
+      {error && <div className="error-message"><h4>{error}</h4></div>}
       {slideFoods && <PopularFoods foods={slideFoods} heading="Our Popular Foods" />}
       {foods && <DeliciousFoods foods={foods} heading="Delicious Foods" />}
     </div>
