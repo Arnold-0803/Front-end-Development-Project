@@ -3,6 +3,7 @@ import Home from "./Home";
 import NavBar from "./Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import SearchedFoods from "./SearchedFoods";
+import RecipeProcedure from "./RecipeProcedure";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path="/cuisine/:type" element={<Cuisine />} />
             <Route path="/searched/:search" element={<SearchedFoods />} />
+            <Route path="/recipes/:name" element={<RecipeProcedure />} />
           </Routes>
         </div>
       </div>
