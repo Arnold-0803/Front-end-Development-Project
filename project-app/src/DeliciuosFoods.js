@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+
 const DeliciousFoods = ({foods, heading}) => {
   return (
     <div className="delicious">
@@ -5,13 +8,24 @@ const DeliciousFoods = ({foods, heading}) => {
       <div className="image-box" key={foods.id}>
         {foods.map((food) => (
           <div className="card" key={food.id}>
-            <p>{food.title}</p>
-            <img src={food.image} alt={food.title} /> 
+            <Link to={"/recipes/" + food.id}>
+              <p>{food.title}</p>
+              <img src={food.image} alt={food.title} />
+              <Gradient />
+            </Link> 
           </div>
         ))}
       </div>
     </div>
   );
 }
- 
+
+const Gradient = styled.div`
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+`;
+
 export default DeliciousFoods;

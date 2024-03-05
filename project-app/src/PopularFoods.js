@@ -1,5 +1,6 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css"; 
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const PopularFoods = ({foods, heading}) => {
@@ -17,8 +18,11 @@ const PopularFoods = ({foods, heading}) => {
           {foods.map(food => (
             <SplideSlide key={food.id}>
               <Card>
-                <p>{food.title}</p>
-                <img src={food.image} alt={food.title} />
+                <Link to={"/recipes/" + food.id}>
+                  <p>{food.title}</p>
+                  <img src={food.image} alt={food.title} />
+                  <Gradient />
+                </Link>
               </Card>
             </SplideSlide>
           ))}
