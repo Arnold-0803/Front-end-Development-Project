@@ -14,7 +14,7 @@ const SearchedFoods = () => {
     fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=9b9461de4ed147f2aa49551fdaa4ad8c&query=${name}`)
       .then(res => {
         if(!res.ok) {
-          throw new Error("faild to fetch data...")
+          throw new Error("faild to fetch data...⚠")
         }
         return res.json();
       })

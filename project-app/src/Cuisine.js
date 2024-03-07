@@ -25,7 +25,7 @@ const Cuisine = () => {
         <Grid>
           {cuisine.map((food) => (
             <Card key={food.id}>
-              <Link to={"/recipes" + food.id}>
+              <Link to={"/recipes/" + food.id}>
                 <img src={food.image} alt={food.title} />
                 <h4>{food.title}</h4>
               </Link>

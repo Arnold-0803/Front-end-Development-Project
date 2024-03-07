@@ -9,7 +9,7 @@ const DeliciousFoods = ({foods, heading}) => {
         {foods.map((food) => (
           <div className="card" key={food.id}>
             <Link to={"/recipes/" + food.id}>
-              <p>{food.title}</p>
+              <p className="name">{food.title}</p>
               <img src={food.image} alt={food.title} />
               <Gradient />
             </Link> 

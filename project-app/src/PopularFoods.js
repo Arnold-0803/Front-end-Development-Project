@@ -19,7 +19,7 @@ const PopularFoods = ({foods, heading}) => {
             <SplideSlide key={food.id}>
               <Card>
                 <Link to={"/recipes/" + food.id}>
-                  <p>{food.title}</p>
+                  <p className="name">{food.title}</p>
                   <img src={food.image} alt={food.title} />
                   <Gradient />
                 </Link>
