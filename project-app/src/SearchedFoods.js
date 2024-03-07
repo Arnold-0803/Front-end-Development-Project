@@ -37,11 +37,11 @@ const SearchedFoods = () => {
       <Wrapper>
         {error && <div className="error-message"><h4>{error}</h4></div>}
         <Grid>
-          {searchedFoods.map((food) => (
-            <Card key={food.id}>
-              <Link to={"/recipes/" + food.id}>
-                <img src={food.image} alt={food.title} />
-                <h4>{food.title}</h4>
+          {searchedFoods.map((search) => (
+            <Card key={search.id}>
+              <Link to={"/recipes/" + search.id}>
+                <img src={search.image} alt={search.title} />
+                <h4>{search.title}</h4>
               </Link>
             </Card>
           ))}
