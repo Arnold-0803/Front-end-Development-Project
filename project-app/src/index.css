@@ -117,6 +117,8 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #070F2B;
+  font-size: 18px;
 }
 
 .exo-links .menu-link svg{
