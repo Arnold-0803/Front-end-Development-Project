@@ -26,7 +26,7 @@ const NavBar = () => {
             <NavLink className="home" to={'/'}>Home</NavLink>
           </li>
           <li className="exo-links">
-            <Link className="drop-link"
+            <Link className="menu-link"
               onClick={handleClick}
             >Exotic cuisine
               <RiArrowDropUpLine id="up-arrow" className={upArrow ? "active" : ""} />
