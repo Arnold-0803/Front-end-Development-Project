@@ -31,6 +31,31 @@ code {
   text-decoration: none;
 }
 
+.nav a h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #070F2B;
+  font-family: 'Droid Sans Mono', 'monospace', monospace;
+
+}
+
+.nav a h1 span{
+  color: #FC6736;
+  font-size: 55px;
+}
+
+.nav .home{
+  padding: 10px 25px;
+  border-radius: 50px;
+}
+
+.nav .home.active{
+  background: #35374B;
+  color: #fff;
+}
+
+
 .search-bar .search-box{
   position: relative;
   width: 450px;
@@ -78,43 +103,84 @@ code {
   list-style: none;
 }
 
-ul li{
+.links ul li{
   margin-left: 40px;
-  
 }
 
-li a{
+.links ul li .home{
   font-size: 18px;
   color: #070F2B;
   text-decoration: none;
 }
 
-.exo-links{
-  position: relative;
+.exo-links .menu-link{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.exo-links .menu-link svg{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exo-links .menu-link #up-arrow.active{
+  display: none;
+}
+
+.exo-links .menu-link #down-arrow.active{
+  display: none;
 }
 
 .exo-links ul{
   position: absolute;
   top: 20px;
+  right: 40px;
+  width: 250px;
+  margin: 60px 0 0;
   background: #fff;
   display: flex;
   flex-direction: column;
-  padding: 21px 10px;
+  padding: 0;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
-  margin: 8px 50px 0 0;
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.4);
   z-index: 100;
 }
 
 .exo-links ul li{
-  position: relative;
   width: 100%;
-  margin: 15px 0;
+  margin: 0;
+}
+
+.exo-links ul li.border{
+  width: 100%;
+  border-bottom: 1px solid #888585;
+}
+
+.exo-links ul li a{
+  width: 100%;
+  padding: 10px 0;
+  display: inline-block;
+  text-align: center;
+}
+
+.exo-links ul li a.active{
+  background: #35374B;
+  color: #fff;
+}
+
+.exo-links ul li a:hover{
+  background: #888585;
+  color: #fff;
+}
+
+.exo-links ul.inactive{
+  display: none;
 }
 
 h1{
@@ -236,25 +302,53 @@ a{
   padding-right: 100px;
 }
 
+.contact .connect-box .socials{
+  font-size: 25px;
+  margin-top: 5px;
+}
+
 .contact .connect-box div{
   margin-right: 100px;
   color: #070F2B;
 }
 
 .contact .connect-box div h4{
-  /* text-align: center; */
-  margin-left: 80px;
+  margin-left: 40px;
 }
 
 .contact .connect-box div ul{
   list-style: none;
 }
 
+.connect-box div ul li{
+  margin-bottom: 15px;
+}
+
+.connect-box div ul a{
+  text-decoration: none;
+}
+
 .connect-box div ul li a:hover{
   text-decoration: underline;
 }
 
-.
+.connect-box div ul li .socials{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: #888585;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: .5s ease;
+}
+
+.connect-box div ul li .socials:hover{
+  background: #fff;
+  color: #070F2B;
+}
 
 
 
@@ -272,19 +366,10 @@ a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.splide__arrow{
+  width: 60px;
+  height: 60px;
+}
 .error-message{
   font-size: 20px;
   text-align: center;
