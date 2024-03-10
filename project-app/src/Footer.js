@@ -19,12 +19,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="contact">
-        <h2>Contacts & Social media</h2>
+        <h2 style={{marginLeft: '-80px'}}>Contacts & Social media</h2>
         <div className="connect-box">
           <div>
             <h4>Location</h4>
             <ul>
-              <li><a href="#">Nairobi</a></li>
+              <li><a href="https://www.google.com/maps/dir/?api=1&nairobi" target="_blank">Nairobi</a></li>
               <li><a href="#">Tokyo</a></li>
               <li><a href="#">Ottawa</a></li>
             </ul>
@@ -48,9 +48,9 @@ const Footer = () => {
           <div>
             <h4>Social media</h4>
             <ul>
-              <li><a href="#"><BsTwitterX /></a></li>
-              <li><a href="#"><BsFacebook /></a></li>
-              <li><a href="#"><BsYoutube /></a></li>
+              <li><a className="socials" href="#"><BsTwitterX /></a></li>
+              <li><a className="socials" href="#"><BsFacebook /></a></li>
+              <li><a className="socials" href="#"><BsYoutube /></a></li>
             </ul>
           </div>
         </div>
